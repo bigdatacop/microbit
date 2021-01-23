@@ -3,15 +3,23 @@ basic.forever(function () {
     cuteBot.forward()
     basic.pause(200)
     cuteBot.motors(100, 40)
-    basic.showString("L")
+    basic.showLeds(`
+        . . # . .
+        . # . . .
+        # # # # #
+        . # . . .
+        . . # . .
+        `)
     basic.pause(1000)
-    cuteBot.forward()
-    basic.pause(200)
     cuteBot.forward()
     basic.pause(200)
     cuteBot.motors(40, 100)
-    basic.showString("R")
+    basic.showLeds(`
+        . . # . .
+        . . . # .
+        # # # # #
+        . . . # .
+        . . # . .
+        `)
     basic.pause(1000)
-    cuteBot.forward()
-    basic.pause(200)
 })
